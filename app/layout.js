@@ -1,5 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { CssBaseline } from "@mui/material";
+import NavigationBar from "./components/NavigationBar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,7 +21,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <CssBaseline />
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <NavigationBar />
         {children}
       </body>
     </html>
