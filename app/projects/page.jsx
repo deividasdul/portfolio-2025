@@ -6,15 +6,14 @@ import {
   CardContent,
   Stack,
   CardActions,
-  IconButton,
   Avatar,
 } from "@mui/material";
-import GitHubIcon from "@mui/icons-material/GitHub";
+import GitHubButton from "../components/GitHubButton";
 
 const Project = () => {
   return (
     <Box mt={20}>
-      <Grid container gap={4} p={4}>
+      <Grid container gap={12} p={4}>
         <Grid size={5} display={"flex"}>
           <Card elevation={12}>
             <CardHeader
@@ -204,12 +203,11 @@ const Project = () => {
               room reservations and information. The system helps to optimise
               the room rental process, ensuring efficiency. The results show
               that it significantly improves the user experience and the
-              administration processes.
+              administration processes. <br />
             </CardContent>
             <CardActions>
-              <IconButton color="primary" href="#">
-                <GitHubIcon />
-              </IconButton>
+              <div style={{ flex: 1 }}></div>
+              <GitHubButton href={"https://github.com/deividasdul/BAVIS"} />
             </CardActions>
           </Card>
         </Grid>
@@ -356,9 +354,8 @@ const Project = () => {
               order fulfilment, delivery.
             </CardContent>
             <CardActions>
-              <IconButton color="primary" href="#">
-                <GitHubIcon />
-              </IconButton>
+              <div style={{ flex: 1 }}></div>
+              <GitHubButton href={"#"} />
             </CardActions>
           </Card>
         </Grid>
@@ -383,9 +380,8 @@ const Project = () => {
               sed nulla in aliquet.
             </CardContent>
             <CardActions>
-              <IconButton color="primary" href="#">
-                <GitHubIcon />
-              </IconButton>
+              <div style={{ flex: 1 }}></div>
+              <GitHubButton href={"#"} />
             </CardActions>
           </Card>
         </Grid>
